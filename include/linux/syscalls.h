@@ -1058,6 +1058,9 @@ asmlinkage long sys_landlock_add_rule(int ruleset_fd, enum landlock_rule_type ru
 asmlinkage long sys_landlock_restrict_self(int ruleset_fd, __u32 flags);
 asmlinkage long sys_memfd_secret(unsigned int flags);
 
+/* custom/hello.c */
+asmlinkage long sys_hello(char *buf, int buf_len);
+
 /*
  * Architecture-specific system calls
  */
